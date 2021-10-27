@@ -8,8 +8,8 @@ print('-------------------------------------------------------------------------
 
 savedCookies = driver.get_cookies()
 
-driver2 = webdriver.PhantomJS(executable_path='./phantomjs-2.1.1-macosx/bin/phantomjs')
-# driver2 = webdriver.Chrome(executable_path='/Volumes/DevHD/LearningProjects/WebCrawlingTest/web_driver/chromedriver')   
+# driver2 = webdriver.PhantomJS(executable_path='./phantomjs-2.1.1-macosx/bin/phantomjs')
+driver2 = webdriver.Chrome(executable_path='/Volumes/DevHD/LearningProjects/WebCrawlingTest/web_driver/chromedriver')   
 driver2.get("http://pythonscraping.com")
 driver2.implicitly_wait(1)
 driver2.delete_all_cookies()
