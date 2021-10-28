@@ -4,8 +4,8 @@ import subprocess
 from selenium import webdriver
 
 
-driver = webdriver.PhantomJS(executable_path='./phantomjs-2.1.1-macosx/bin/phantomjs')
-# driver = webdriver.Firefox()
+# driver = webdriver.PhantomJS(executable_path='./phantomjs-2.1.1-macosx/bin/phantomjs')
+driver = webdriver.Chrome(executable_path='/Volumes/DevHD/LearningProjects/WebCrawlingTest/web_driver/chromedriver')   
 driver.get("http://www.amazon.com/War-Peace-Leo-Nikolayevich-Tolstoy/dp/1427030200")
 time.sleep(2)
 
